@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+<div class="row" style="margin-top:50px">
+<form action="/" method="GET">
+	<select name="category_id" class="form-select" aria-label="Default select example">
+		<option value="" selected>Select a category</option>
+		{{#each categories}}
+			{{#with this}}
+			<option value={{_id}}>{{name}}</option>
+			{{/with}}
+		{{/each}}
+	</select>
+	<p></p>
+	<button type="submit" class="btn btn-primary">Filter</button>
+</form>
+</div>
+<div class="row" style="margin-top:50px">
+	{{#each entries}}
+		{{#with this}}
+		<div class="col-6">{{>entry}}</div>
+		{{/with}}
+	{{/each}}
+</div>
