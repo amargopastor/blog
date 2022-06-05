@@ -21,10 +21,10 @@
   resolved "https://registry.yarnpkg.com/@fastify/error/-/error-2.0.0.tgz#a9f94af56eb934f0ab1ce4ef9f0ced6ebf2319dc"
   integrity sha512-wI3fpfDT0t7p8E6dA2eTECzzOd+bZsZCJ2Hcv+Onn2b7ZwK3RwD27uW2QDaMtQhAfWQQP+WNK7nKf0twLsBf9w==
 
-"@fastify/formbody@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@fastify/formbody/-/formbody-7.0.0.tgz#e89a6540987838b307e75bb19a72b7bfe779ef8e"
-  integrity sha512-PrOrwR4fxzxkdE65Ex1c0bhl7UvUc47GTfhkHQhnROXc2p485ANR/A4Sl3uYhNvuFVAQtLQYNwjRZL8d6HOAOA==
+"@fastify/formbody@6":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@fastify/formbody/-/formbody-6.0.1.tgz#13d7c5454489a5015c119725f0adda50dcf9fddf"
+  integrity sha512-yIwCitoES4Sh0tPc6v+uHBqZEKw3CooSZ4kUvO9NC8Y7oRBCW+aC+pTgUZ8M3r2DOzRkNO+Pq0jMQkyL2k8jZQ==
   dependencies:
     fastify-plugin "^3.0.0"
 

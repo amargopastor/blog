@@ -10,7 +10,7 @@
     "seed": "nodemon src/seed.ts"
   },
   "dependencies": {
-    "@fastify/formbody": "^7.0.0",
+    "@fastify/formbody": "6",
     "@fastify/static": "^5.0.2",
     "@types/node": "^16.11.12",
     "dotenv": "^11.0.0",

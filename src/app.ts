@@ -27,7 +27,7 @@ export const main_app: FastifyPluginAsync = async (app) => {
             }
         }
     });
-    // app.register(formBodyPlugin);
+    app.register(formBodyPlugin);
     app.register(main_router);
     app.register(form_router, { prefix: "/form" });
 }
