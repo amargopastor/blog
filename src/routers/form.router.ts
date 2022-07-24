@@ -4,6 +4,7 @@ import { Category } from "../models/Category.models";
 
 import { Entry } from "../models/Entry.models";
 
+
 type MyRequest = FastifyRequest<{
     Body: { title: string, subtitle: string, body: string, hastag: string, id: string, name: string };
 }>;
@@ -45,8 +46,14 @@ const add_category = async (request: FastifyRequest, reply: FastifyReply) => {
     return reply.view("views/add_category", data);
 }
 
-const deleteall = async (request: MyRequest, reply: FastifyReply) => {
+const delete_all = async (request: MyRequest, reply: FastifyReply) => {
     await Entry.deleteMany();
+    return reply.redirect("/")
+}
+
+const generate_entries = async (request: MyRequest, reply: FastifyReply) => {
+    console.log("generate_entries");
+    require('child_process').fork('./src/seed.ts');
     return reply.redirect("/")
 }
 
@@ -55,5 +62,6 @@ export const form_router: FastifyPluginAsync = async (app) => {
     app.post("/category_form", category_form);
     app.get("/add_entry", add_entry);
     app.get("/add_category", add_category);
-    app.get("/deleteall", deleteall)
+    app.get("/delete_all", delete_all);
+    app.get("/generate_entries", generate_entries)
 }

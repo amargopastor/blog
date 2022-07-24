@@ -10,6 +10,7 @@
     "seed": "nodemon src/seed.ts"
   },
   "dependencies": {
+    "@fastify/cookie": "^7.3.1",
     "@fastify/formbody": "6",
     "@fastify/static": "^5.0.2",
     "@types/node": "^16.11.12",

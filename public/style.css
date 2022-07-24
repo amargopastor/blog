@@ -1,0 +1,6 @@
+#home_form {
+	display: flex;
+}
+#home_form > button {
+	margin-left: 15px;
+}

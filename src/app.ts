@@ -23,7 +23,7 @@ export const main_app: FastifyPluginAsync = async (app) => {
             partials: {
                 entry: '/views/partials/entry.hbs',
                 menu: '/views/partials/menu.hbs',
-                //entry_form: '/views/partials/forms/entry_form.hbs',
+                entry_form: '/views/partials/forms/entry_form.hbs',
             }
         }
     });
